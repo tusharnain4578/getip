@@ -4,9 +4,7 @@ const app = express()
 
 
 app.get("/", (req, res)=>{
-res.json({
-your_ip : req.ip
-})
+res.send(`your ip is ${req.ip}`)
 })
 
 
